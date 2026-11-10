@@ -72,14 +72,13 @@ class ReverseTest(HostsTestCase):
     def test_reverse_with_querydict_with_repeated_key(self):
         qd = QueryDict("items=apple&items=banana&user=admin", mutable=True)
         self.assertEqual(
-            reverse("simple-direct", host="blank_or_www", query=qd), "//example.com/simple/?items=apple&items=banana&user=admin"
+            reverse("simple-direct", host="blank_or_www", query=qd),
+            "//example.com/simple/?items=apple&items=banana&user=admin",
         )
 
     @override_settings(ROOT_HOSTCONF="tests.hosts.blank", PARENT_HOST="example.com")
     def test_reverse_with_blank_query(self):
-        self.assertEqual(
-            reverse("simple-direct", host="blank_or_www", query=""), "//example.com/simple/"
-        )
+        self.assertEqual(reverse("simple-direct", host="blank_or_www", query=""), "//example.com/simple/")
 
     @override_settings(ROOT_HOSTCONF="tests.hosts.blank", PARENT_HOST="example.com")
     def test_reverse_with_fragment(self):
