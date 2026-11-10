@@ -2,6 +2,10 @@ Changelog
 =========
 
 X.Y (unreleased)
+----------------
+
+ - Add support for query and fragment arguments in the `reverse` function 
+   to match Django's `reverse` function behavior since 5.2.
 
 7.0 (2025-04-24)
 ----------------
