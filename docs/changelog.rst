@@ -8,6 +8,9 @@ X.Y (unreleased)
 
 - Switch from Jazzband org to Django Commons.
 
+- Add support for ``query`` and ``fragment`` arguments in ``reverse()`` and
+  ``reverse_lazy()`` to match Django's ``reverse()`` behavior since 5.2.
+
 7.0 (2025-04-24)
 ----------------
 
