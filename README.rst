@@ -40,10 +40,11 @@ at ``api.example.com`` and ``beta.example.com``, add the following to a
 
 This causes requests to ``{api,beta}.example.com`` to be routed to their
 corresponding URLconf. You can use your ``urls.py`` as a template for these
-hostconfs.
+hostconfs. Django looks up ``handler404`` and ``handler500`` in the matched
+host's URLconf, so add them to each one that needs custom error pages.
 
-Patterns are evaluated in order. If no pattern matches, the request is
-processed in the usual way, ie. using the standard ``ROOT_URLCONF``.
+Patterns are evaluated in order. If no pattern matches, the request uses the
+URLconf of the ``DEFAULT_HOST`` pattern.
 
 The patterns on the left-hand side are regular expressions. For example,
 the following ``ROOT_HOSTCONF`` setting will route ``foo.example.com``
