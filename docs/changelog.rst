@@ -11,6 +11,10 @@ X.Y (unreleased)
 - Add support for ``query`` and ``fragment`` arguments in ``reverse()`` and
   ``reverse_lazy()`` to match Django's ``reverse()`` behavior since 5.2.
 
+- Declare build and package metadata in pyproject.toml; adopt PEP 517
+
+- Remove tests/ from the built wheel
+
 7.0 (2025-04-24)
 ----------------
 
