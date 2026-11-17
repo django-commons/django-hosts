@@ -15,7 +15,7 @@ X.Y (unreleased)
 
 - Remove tests/ from the built wheel
 
-- Confirmed support for Python 3.14.
+- Confirmed support for Python 3.14 and 3.15.
 
 - Confirmed support for Django 6.0 and 6.1
   (no functional code changes were required).
