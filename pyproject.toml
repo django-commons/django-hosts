@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=80", "setuptools-scm[simple]>=9.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-hosts"
+description = "Dynamic and static host resolving for Django. Maps hostnames to URLconfs."
+readme = "README.rst"
+dynamic = ["version"]
+requires-python = ">=3.10"
+authors = [{ name = "Jannis Leidel", email = "jannis@leidel.info" }]
+license = "BSD-3-Clause"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://django-hosts.readthedocs.io/"
+Source = "https://github.com/django-commons/django-hosts"
